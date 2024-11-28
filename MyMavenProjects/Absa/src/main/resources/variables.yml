@@ -1,0 +1,17 @@
+URI:
+  DOG_API: /dog
+
+BASE_URL:
+  API_URL:
+  WEB_URL:
+
+BROWSERS:
+  CHROME: CHROME
+
+LOCATORS:
+  RED_FORM_VALIDATION_XPATH: //*[@style='color:rgb(255, 0, 0);']
+  RED_VALIDATION_MESSAGE_XPATH: //*[@id="resultDiv"]/text()[1]
+  ENTER_INTEGER_XPATH: //input[@id='number']
+  CALCULATE_FACTORIAL_BUTTON_XPATH: //button[@id='getFactorial']
+  FACTORIAL_RESULTS_XPATH: //*[@id='resultDiv']
+
