@@ -16,8 +16,8 @@ public class ReadVariables {
     static JsonPath jsonPath;
     static String json;
 
-    private ReadVariables() {
-    }
+    private ReadVariables()
+    {}
 
     public static void readVariablesFile()
     {
@@ -38,7 +38,7 @@ public class ReadVariables {
 
     public static String getApiBaseURL()
     {
-        return jsonPath.getString("BASE_URL");
+        return jsonPath.getString("URL.API_BASE_URL");
     }
 
     public static String getApiBreedsUri()
@@ -55,6 +55,56 @@ public class ReadVariables {
     {
         return jsonPath.getString("URI.RANDOM_BREED_IMAGE");
     }
+
+    public static String getWebUrl()
+    {
+        return jsonPath.getString("URL.WEB_BASE_URL");
+    }
+    public static String addUserLink()
+    {
+        return jsonPath.getString("LOCATORS.ADD_USER_LINK");
+    }
+    public static String firstName()
+    {
+        return jsonPath.getString("LOCATORS.FIRST_NAME");
+    }
+    public static String lastName()
+    {
+        return jsonPath.getString("LOCATORS.LAST_NAME");
+    }
+    public static String username()
+    {
+        return jsonPath.getString("LOCATORS.USERNAME");
+    }
+    public static String password()
+    {
+        return jsonPath.getString("LOCATORS.PASSWORD");
+    }
+    public static String customerCompanyAAA()
+    {
+        return jsonPath.getString("LOCATORS.CUSTOMER_COMPANY_AAA");
+    }
+    public static String customerCompanyBBB()
+    {
+        return jsonPath.getString("LOCATORS.CUSTOMER_COMPANY_BBB");
+    }
+    public static String role()
+    {
+        return jsonPath.getString("LOCATORS.ROLE");
+    }
+    public static String email()
+    {
+        return jsonPath.getString("LOCATORS.EMAIL");
+    }
+    public static String cellphone()
+    {
+        return jsonPath.getString("LOCATORS.CELLPHONE");
+    }
+    public static String saveButton()
+    {
+        return jsonPath.getString("LOCATORS.SAVE_BUTTON");
+    }
+
 
 
 

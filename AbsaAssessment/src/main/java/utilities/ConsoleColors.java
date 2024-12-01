@@ -8,6 +8,5 @@ public class ConsoleColors
     // Regular Color
     public static final String RED = "\033[0;31m";     // RED
     public static final String GREEN = "\033[0;32m";   // GREEN
-    public static final String YELLOW_BOLD = "\033[1;33m"; // YELLOW
 }
 

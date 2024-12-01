@@ -1,0 +1,23 @@
+URL:
+  API_BASE_URL: https://dog.ceo/api
+
+  WEB_BASE_URL: https://www.way2automation.com/angularjs-protractor/webtables/
+
+URI:
+  LIST_OF_BREEDS: /breeds/list/all
+  SUB_BREEDS_LIST: /breed/{breed}
+  RANDOM_BREED_IMAGE: /breed/{breed}/images/random
+
+LOCATORS:
+  ADD_USER_LINK: //button[@class='btn btn-link pull-right']
+  FIRST_NAME: //input[@name='FirstName']
+  LAST_NAME: //input[@name='LastName']
+  USERNAME: //input[@name='UserName']
+  PASSWORD: //input[@name='Password']
+  CUSTOMER_COMPANY_AAA: //input[@value='15']
+  CUSTOMER_COMPANY_BBB: //input[@value='16']
+  ROLE: //select[@name='RoleId']
+  EMAIL: //input[@name='Email']
+  CELLPHONE: //input[@name='Mobilephone']
+  SAVE_BUTTON: //button[@class='btn btn-success']
+
