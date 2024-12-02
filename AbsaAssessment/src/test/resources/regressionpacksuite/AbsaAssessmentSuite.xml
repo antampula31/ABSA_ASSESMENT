@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testng.xml">
+    <test name="AbsaAssessment">
+    <classes>
+        <class name = "api.ListOfBreedsTests">
+            <methods>
+                <include name="getListOfAllBreeds"/>
+                <include name="getListOfRetrieverBreeds"/>
+                <include name="getRandomImageOfGoldenBreed"/>
+            </methods>
+        </class>
+        <class name="ui.AddUsersTests">
+            <methods>
+                <include name="addUserDetails"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
