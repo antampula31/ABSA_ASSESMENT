@@ -8,6 +8,8 @@ import static io.restassured.RestAssured.given;
 
 public class ApiCalls
 {
+    private ApiCalls()
+    {}
     public static JsonPath listOfBreeds()
     {
         ReadVariables.readVariablesFile();

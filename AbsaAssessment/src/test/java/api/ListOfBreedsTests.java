@@ -11,30 +11,30 @@ public class ListOfBreedsTests extends ExtentReports
     @Test
     public static void getListOfAllBreeds()
     {
-        test=extent.createTest("ListOfAllBreeds");
+        test=extent.createTest("getListOfAllBreeds");
         JsonPath apiResponse= ApiCalls.listOfBreeds();
         ApiValidations.verifyRetrieverBreedWithinTheList(apiResponse);
-
         endReport();
     }
 
     @Test
     public static void getListOfRetrieverBreeds()
     {
-        test=extent.createTest("ListOfRetrieverBreeds");
+        test=extent.createTest("getListOfRetrieverBreeds");
         String breed="retriever";
         JsonPath apiResponse= ApiCalls.listOfSubBreedsByBreed(breed);
-        ApiValidations.verifyRetrieverBreedWithinTheList(apiResponse);
+        ApiValidations.verifyRetrieverBreedListIsReturned(apiResponse);
         endReport();
     }
 
     @Test
     public static void getRandomImageOfGoldenBreed()
     {
-        test=extent.createTest("RandomImageOfGoldenBreed");
+        test=extent.createTest("getRandomImageOfGoldenBreed");
         String breed="golden";
-        JsonPath apiResponse= ApiCalls.listOfSubBreedsByBreed(breed);
-        ApiValidations.verifyRetrieverBreedWithinTheList(apiResponse);
+        JsonPath apiResponse= ApiCalls.randomImageOfABreed(breed);
+        ApiValidations.verifyGoldenBreedRandomImageIsReturned(apiResponse);
         endReport();
+
     }
 }

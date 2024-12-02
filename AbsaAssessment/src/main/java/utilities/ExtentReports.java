@@ -15,8 +15,8 @@ public class ExtentReports
     {
         ExtentSparkReporter htmlSparkReporter = new ExtentSparkReporter("src/main/Results/index.html");
 
-        htmlSparkReporter.config().setDocumentTitle("OLD MUTUAL FINANCE TESTING");
-        htmlSparkReporter.config().setReportName("OLD MUTUAL FINANCE");
+        htmlSparkReporter.config().setDocumentTitle("ABSA TESTING");
+        htmlSparkReporter.config().setReportName("ABSA ASSESMENT");
         htmlSparkReporter.config().setTheme(Theme.STANDARD);
 
         extent = new com.aventstack.extentreports.ExtentReports();

@@ -6,18 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import utilities.ExtentReports;
 import utilities.ReadVariables;
 
-public class AddUsersTests
+public class AddUsersTests extends ExtentReports
 {
     @Test(dataProvider = "Users")
     public static void addUserDetails(String firstName, String lastName, String username, String password,
                                       String customer,String role,String email,String phone)
     {
+        test=extent.createTest("addUserDetails");
         WebDriver driver = new ChromeDriver();
         ReadVariables.readVariablesFile();
         HomePage.navigateToWay2AutomationSite(driver);
         AddUserPage.addUser(driver,firstName,lastName,username,password,customer,role,email,phone);
+        endReport();
     }
 
     @DataProvider(name ="Users")
